@@ -1,6 +1,13 @@
 # mermaid_spec.rb
 require 'rspec'
 require './lib/mermaid'
+class Mermaid
+    def initialize(name)
+    @name = name
+    @age = age
+    @get_older = get_older
+  end
+end
 
 describe Mermaid do
   it 'is an instance of mermaid' do
@@ -24,3 +31,5 @@ describe Mermaid do
     expect(mermaid.age).to eq 23
   end
 end
+
+#This is not currently sinking in, i am going to review/prep for my eval and come back.
